@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 // -- This is pulling the specific function out the action file
-
 const Player = ({points}) => (
         <Fragment>
           <div className="character-container">
