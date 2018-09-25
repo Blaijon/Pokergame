@@ -1,0 +1,493 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Poker Table */
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.poker-table{
+    width: 88%;
+    height: 78%;
+    background: orange;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.poker-table img{
+  width: 100%;
+  height: 100%;
+}
+
+.cards-center-container{
+  width: 431px;
+    height: 106px;
+    /* background: pink; */
+    z-index: 10;
+    position: absolute;
+    top: 37%;
+    left: 35%;
+}
+
+.card-center1{
+width: 18%;
+height: 100%;
+margin: 0px 1%;
+display: inline-block;
+float: left;
+position: relative;
+transform-style: preserve-3d;
+transform: rotateY(180deg);
+transition:  all 0.5s ease;
+
+}
+/* Flip card */
+.card-center1:hover{
+  border: 5px solid purple;
+}
+/* End Flip */
+.thefront{
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+}
+.theback{
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  background: pink;
+  transform: rotateY(180deg);
+}
+
+.card-center2{
+  width: 18%;
+    height: 100%;
+    margin: 0px 1%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition:  all 0.5s ease;
+}
+/* Flip card */
+.card-center2:hover{
+border: 1px solid purple;
+}
+/* End Flip */
+.card-center3{
+  width: 18%;
+height: 100%;
+margin: 0px 1%;
+display: inline-block;
+float: left;
+position: relative;
+transform-style: preserve-3d;
+transform: rotateY(180deg);
+transition:  all 0.5s ease;
+}
+/* Flip card */
+.card-center3:hover{
+border: 1px solid purple;
+}
+/* End Flip */
+.card-center4{
+  width: 18%;
+    height: 100%;
+    margin: 0px 1%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition:  all 0.5s ease;
+}
+/* Flip card */
+.card-center4:hover{
+  border: 1px solid purple;
+}
+/* End Flip */
+.card-center5{
+  width: 18%;
+height: 100%;
+margin: 0px 1%;
+display: inline-block;
+float: left;
+position: relative;
+transform-style: preserve-3d;
+transform: rotateY(180deg);
+transition:  all 0.5s ease;
+}
+/* Flip card */
+.card-center5:hover{
+border: 1px solid purple;
+}
+/* End Flip */
+/* End of poker table */
+
+/* Beginning Css of deck */
+
+.box{
+  position: absolute;
+top: 52%;
+left: 70%;
+transform: translate(-50%, -50%);
+width: 160px;
+height: 224px;
+background: orange;
+transform: rotate(26deg) scale(0.4);
+}
+.box .card{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  /* background: url("https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_grande.png?v=1535755695") center center ;
+  object-fit: contain; */
+  border-radius: 10px;
+  /* transform: scale(0.4); */
+  box-shadow: 0 2px 15px rgba(0,0,0,.5);
+  transition:0.5s;
+  transform-origin:bottom;
+
+}
+.box .card:nth-child(1){
+  transform: translate(0px,  0px)
+}
+.box .card:nth-child(2){
+  transform: translate(2px, 2px)
+}
+.box .card:nth-child(3){
+  transform: translate(4px, 4px)
+}
+.box .card:nth-child(4){
+  transform: translate(6px, 6px)
+}
+.box .card:nth-child(5){
+  transform: translate(8px, 8px)
+}
+.box .card:nth-child(5){
+  transform: translate(10px, 10px)
+}
+
+.box .card img{
+  width: 100%;
+ height: 100%;
+}
+
+ /* End of deck */
+
+ /* beginning of Character1  */
+ .character-container{
+   background: rgba(0,0,0,0.6);
+width: 228px;
+height: 123px;
+border-radius: 4%;
+position: absolute;
+top: 87%;
+left: 43%;
+ }
+  .character-container .points{
+    width: 50%;
+    height:123px;
+    display: inline-block;
+    /* background: pink; */
+  }
+.character-container .points h4{
+  width: 100%;
+color: white;
+display: inline;
+font-size: 22px;
+line-height: 9;
+margin: 23px;
+
+  }
+
+ .character-container .character-image{
+   width: 50%;
+height: 100%;
+display: inline-block;
+float: right;
+padding: 0px;
+
+ }
+ .character-container .character-image img{
+   width: 80%;
+    height: 75%;
+    margin-top: 26px;
+    margin-left: 7px;
+ }
+
+/* End of Character1 */
+
+/* beginning of Character2  */
+.character2-container{
+  background: rgba(0,0,0,0.6);
+    width: 216px;
+    height: 123px;
+    border-radius: 4%;
+    position: absolute;
+    top: 71%;
+    left: -4%;
+}
+ .character2-container .points{
+   width: 50%;
+   height:123px;
+   display: inline-block;
+   /* background: pink; */
+ }
+.character2-container .points h4{
+ width: 100%;
+color: white;
+display: inline;
+font-size: 22px;
+line-height: 9;
+margin: 23px;
+
+ }
+
+.character2-container .character-image{
+  width: 50%;
+height: 100%;
+display: inline-block;
+float: right;
+padding: 0px;
+
+}
+.character2-container .character-image img{
+  width: 80%;
+   height: 75%;
+   margin-top: 26px;
+   margin-left: 7px;
+}
+
+/* End of Character2 */
+
+
+/* beginning of Character3  */
+.character3-container{
+  background: rgba(0,0,0,0.6);
+width: 228px;
+height: 123px;
+border-radius: 4%;
+position: absolute;
+top: 1%;
+left: -4%;
+}
+ .character3-container .points{
+   width: 50%;
+   height:123px;
+   display: inline-block;
+   /* background: pink; */
+ }
+.character3-container .points h4{
+ width: 100%;
+color: white;
+display: inline;
+font-size: 22px;
+line-height: 9;
+margin: 23px;
+
+ }
+
+.character3-container .character-image{
+  width: 50%;
+height: 100%;
+display: inline-block;
+float: right;
+padding: 0px;
+
+}
+.character3-container .character-image img{
+  width: 80%;
+   height: 75%;
+   margin-top: 26px;
+   margin-left: 7px;
+}
+
+/* End of Character3 */
+
+
+/* beginning of Character4  */
+.character4-container{
+  background: rgba(0,0,0,0.6);
+width: 228px;
+height: 123px;
+border-radius: 4%;
+position: absolute;
+top: -9%;
+left: 43%
+}
+ .character4-container .points{
+   width: 50%;
+   height:123px;
+   display: inline-block;
+   /* background: pink; */
+ }
+.character4-container .points h4{
+ width: 100%;
+color: white;
+display: inline;
+font-size: 22px;
+line-height: 9;
+margin: 23px;
+
+ }
+
+.character4-container .character-image{
+  width: 50%;
+height: 100%;
+display: inline-block;
+float: right;
+padding: 0px;
+
+}
+.character4-container .character-image img{
+  width: 80%;
+   height: 75%;
+   margin-top: 26px;
+   margin-left: 7px;
+}
+
+/* End of Character4 */
+
+
+/* beginning of Character5  */
+.character5-container{
+  background: rgba(0,0,0,0.6);
+width: 228px;
+height: 123px;
+border-radius: 4%;
+position: absolute;
+top: -3%;
+left: 84%;
+}
+ .character5-container .points{
+   width: 50%;
+   height:123px;
+   display: inline-block;
+   /* background: pink; */
+ }
+.character5-container .points h4{
+ width: 100%;
+color: white;
+display: inline;
+font-size: 22px;
+line-height: 9;
+margin: 23px;
+
+ }
+
+.character5-container .character-image{
+  width: 50%;
+height: 100%;
+display: inline-block;
+float: right;
+padding: 0px;
+
+}
+.character5-container .character-image img{
+  width: 80%;
+   height: 75%;
+   margin-top: 26px;
+   margin-left: 7px;
+}
+
+/* End of Character5 */
+
+
+/* beginning of Character6  */
+.character6-container{
+  background: rgba(0,0,0,0.6);
+width: 211px;
+height: 123px;
+border-radius: 4%;
+position: absolute;
+top: 71%;
+left: 86%;
+}
+ .character6-container .points{
+   width: 50%;
+   height:123px;
+   display: inline-block;
+   /* background: pink; */
+ }
+.character6-container .points h4{
+ width: 100%;
+color: white;
+display: inline;
+font-size: 22px;
+line-height: 9;
+margin: 23px;
+
+ }
+
+.character6-container .character-image{
+  width: 50%;
+height: 100%;
+display: inline-block;
+float: right;
+padding: 0px;
+
+}
+.character6-container .character-image img{
+  width: 80%;
+   height: 75%;
+   margin-top: 26px;
+   margin-left: 7px;
+}
+
+/* End of Character6 */
+
+/* Beginning Game buttons */
+  .game-button-container{
+
+  }
+
+
+  .game-button-container input{
+    background: #2f3542;
+    border: none;
+    width: 96px;
+    height: 31px;
+    color: #f1f2f6;
+    font-weight:400;
+    font-size: 14px;
+    margin: 2px;
+
+  }
+  .game-button-container input:hover{
+    cursor:pointer;
+    background: #535c68;
+    font-weight:500;
+    color:#ffa502;
+  }
+
+  .game-button-container .check-button{
+      /* display:none; */
+  }
+  .game-button-container .call-button{
+    /* display:none; */
+  }
+  .game-button-container .fold-button{
+      /* display:none; */
+  }
+  .game-button-container .all-in-button{
+      /* display:none; */
+  }
+  .game-button-container .start-game-button{
+
+  }
+
+/* End of Game Button */
