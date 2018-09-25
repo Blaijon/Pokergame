@@ -23,8 +23,6 @@ export function make_deck(cards){
 }
 
 
-
-
 //----- Shuffles Deck Function ----
 export function shuffleDeck(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
