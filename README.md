@@ -1,8 +1,10 @@
+# Pokergame
+
 Task Left to complete:
 
     1. Discard Button Functionality
     2. Five cards of consecutive rank Functionality
-# Pokergame
+
 
 Poker Game:
 
