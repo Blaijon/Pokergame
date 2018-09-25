@@ -74,7 +74,7 @@ export function checkHand( centertablecards, points,deck){
 
 
     // ------ Need To Complete 5 consecutive in a row function ----------
-
+    
     return dispatch({
       type: CHECK_HAND,
       resultFromAction: result,
