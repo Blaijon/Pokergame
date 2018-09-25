@@ -2,6 +2,7 @@ Task Left to complete:
 
     1. Discard Button Functionality
     2. Five cards of consecutive rank Functionality
+# Pokergame
 
 Poker Game:
 
@@ -15,5 +16,5 @@ Poker Game:
       - Go Button:   checks your hand for two of a kind or five cards of consecutive rank.
 
       Most of Logic is in Custom Function File and Actions File.
-# Pokergame
+
 
