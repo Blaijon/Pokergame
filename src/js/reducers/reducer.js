@@ -22,7 +22,6 @@ const initialState = {
 
 
 export default function(state = initialState, action){
-
   // ---- (Destructing) Data being passed to Update the initial state ---
   const {
     type,
