@@ -68,7 +68,6 @@ transition:  all 0.5s ease;
   background: pink;
   transform: rotateY(180deg);
 }
-
 .card-center2{
   width: 18%;
     height: 100%;
