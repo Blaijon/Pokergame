@@ -35,7 +35,7 @@ componentDidMount(){
            let displayGoButtonCondition = displayGoButton ? <input onClick={() => {checkHand(centercards, points,deck)}} className="call-button" type="button" value="GO"/> : <input style= {{display: `none`}} className="call-button" type="button" disabled value="GO"/>;
 
            let displayKeepButtonCondition = displayKeepButton ? <input onClick={() => {keepSelectedCards(selectedCenterCards)}} className="all-in-button" type="button" value="Keep"/> : <input style= {{display: `none`}} className="all-in-button" type="button" disabled value="Keep"/>;
-
+           
 
 
 
