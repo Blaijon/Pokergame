@@ -30,7 +30,7 @@ selectedCard(centercardSuit, centercardVaule){
   displayCenterCards(){
     const { centercards } = this.props; // --- State of center card array (in reducer file)
     const { displaycentercards } = this.props; //---- Toogles center cards to display
-
+      
     // Display Center Cards
       return centercards.map((centercard, index) => {
         if (displaycentercards === true) {
